@@ -1,15 +1,24 @@
+*{user-select:none}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
+.Blob-Image {
   height: 40vmin;
   pointer-events: none;
 }
 
+.blobDiv{
+  transition:0.2s ease all;
+}
+.blobDiv.on{
+  transform:scale(1.2);
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .Blob-Image {
+    animation: Blob-Image-spin infinite 20s linear;
   }
 }
 
@@ -28,7 +37,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes Blob-Image-spin {
   from {
     transform: rotate(0deg);
   }
